@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<ul class="bullets">
+<li>Optimized front/back‑end features (JS, Python, HTML/CSS) → <strong>−15% page load time</strong> via refactoring.</li>
+<li>Designed and implemented new company webpages and a centralized video‑resources hub, improving navigation.</li>
+<li>Simplified information architecture and layouts → <strong>−50% support tickets</strong>, ↑ views + time‑on‑page.</li>
+</ul>
+</div>
+<div class="job">
+<h3>Academic Projects — Machine Learning</h3>
+<small>2024 – 2025</small>
+<ul class="bullets">
+<li><strong>Tennis Winners:</strong> engineered features, trained classification models (LogReg, XGBoost), ~65% accuracy, +45% over baseline.</li>
+<li><strong>Melbourne Housing:</strong> regression with geo features; produced clear visualizations and error analysis.</li>
+</ul>
+</div>
+</div>
+<p class="lead" style="margin-top:10px">Full résumé available as <a href="resume.pdf">PDF</a>.</p>
+</section>
+
+
+<section id="about" class="wrap">
+<h2>About</h2>
+<div class="about">
+<div class="panel">
+<p>Hi, I’m Livia — a product‑minded CS student blending UX, frontend, and data. I enjoy taking ambiguous ideas to crisp, shippable features with a bias for clarity and speed.</p>
+<p>Outside screens: weightlifting, podcasts (Inner Spiral 🎙️), and film editing rabbit holes.</p>
+</div>
+<div class="panel">
+<h3 style="margin:0 0 8px">Skills & Tools</h3>
+<p><strong>Design:</strong> UX research, wireframing, prototyping, accessibility, Figma.</p>
+<p><strong>Build:</strong> HTML, CSS, JavaScript, React, Python.</p>
+<p><strong>Data:</strong> pandas, scikit‑learn, visualization.</p>
+</div>
+</div>
+</section>
+
+
+<section id="contact" class="wrap" style="margin-bottom:30px">
+<h2>Contact</h2>
+<div class="panel">
+<form action="mailto:liviak7@gmail.com" method="post" enctype="text/plain">
+<input name="name" placeholder="Your name" required>
+<input name="email" type="email" placeholder="Your email" required>
+<textarea name="message" rows="5" placeholder="Your message"></textarea>
+<button class="btn primary" type="submit">Send</button>
+</form>
+<p class="lead" style="margin-top:10px">Or reach me on <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>.</p>
+</div>
+</section>
+</main>
+
+
+<footer>
+<div class="wrap">© <span id="y"></span> Livia Kaufman • Built with ❤️ on GitHub Pages</div>
+</footer>
+
+
+<script>
+// Accent cycler (click the dot)
+(function(){
+const dot = document.querySelector('.dot');
+const accents = ['--acc-1','--acc-2','--acc-3','--acc-4'];
+let i = 0;
+function setAccent(idx){
+const c = getComputedStyle(document.documentElement).getPropertyValue(accents[idx]).trim();
+document.documentElement.style.setProperty('--accent', c);
+document.querySelector('meta[name="theme-color"]').setAttribute('content', c);
+}
+function next(){ i = (i+1) % accents.length; setAccent(i); }
+dot.addEventListener('click', next);
+dot.addEventListener('keypress', (e)=>{ if(e.key==='Enter' || e.key===' '){ next(); }});
+document.getElementById('y').textContent = new Date().getFullYear();
+})();
+
+
+// Animated active underline that follows hovered/active link (Framer-ish)
+(function(){
+const nav = document.getElementById('site-nav');
+const underline = nav.querySelector('.active-underline');
+function move(el){
+const r = el.getBoundingClientRect();
+const pr = nav.getBoundingClientRect();
+underline.style.width = r.width + 'px';
+underline.style.left = (r.left - pr.left) + 'px';
+}
+nav.querySelectorAll('a').forEach(a=>{
+a.addEventListener('mouseenter', ()=> move(a));
+a.addEventListener('focus', ()=> move(a));
+a.addEventListener('click', ()=> move(a));
+});
+// set initial to first link
+move(nav.querySelector('a'));
+})();
+</script>
+</body>
+</html>

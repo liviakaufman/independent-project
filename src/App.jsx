@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code, Database, Palette, ChevronDown } from 'lucide-react';
 
-export default function Portfolio() {
+function App() {
   const [activeFilter, setActiveFilter] = useState('all');
 
   const projects = [
@@ -121,7 +121,6 @@ export default function Portfolio() {
           <p className="text-gray-400 text-lg">Check out some of my recent work</p>
         </div>
 
-        {/* Filter Buttons */}
         <div className="flex justify-center gap-4 mb-12">
           <button
             onClick={() => setActiveFilter('all')}
@@ -155,7 +154,6 @@ export default function Portfolio() {
           </button>
         </div>
 
-        {/* Projects Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredProjects.map((project) => (
             <div key={project.id} className="bg-white/5 backdrop-blur rounded-xl overflow-hidden border border-white/10 hover:border-purple-500/50 transition transform hover:scale-105">
@@ -237,3 +235,5 @@ export default function Portfolio() {
     </div>
   );
 }
+
+export default App;

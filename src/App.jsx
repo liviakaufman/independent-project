@@ -30,7 +30,7 @@ function App() {
       title: "Brand Redesign",
       description: "A comprehensive visual identity project focused on reimagining brand aesthetics through modern design principles, typography, and color theory.",
       tags: ["Branding", "UI/UX", "Visual Design", "Typography"],
-      image: "truck.jpg",
+      image: "/independent-project/truck.jpg",
       github: "https://github.com/washu-cse2004-fl2025-1/brand-redesign-liviakaufman",
       live: "https://washu-cse2004-fl2025-1.github.io/brand-redesign-liviakaufman/",
       category: "web"

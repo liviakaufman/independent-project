@@ -60,7 +60,7 @@ function App() {
       title: "Cosmos Exploration Branding",
       description: "A complete visual identity system featuring custom logo design, a space-themed color palette, and responsive iconography.",
       tags: ["Branding", "UI/UX Design", "Iconography", "Style Guide"],
-      image: "/independent-project/cosmos-logo.png",
+      image: "/independent-project/cosmos-logo2.png",
       designLink: ["/cosmos-logo.png", "/cosmos-logo2.png"],
       category: "design"
     },

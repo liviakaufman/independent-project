@@ -40,7 +40,7 @@ function App() {
       title: "Interactive Image Gallery",
       description: "A dynamic gallery featuring responsive layouts, hover effects, and a focus on sleek UI/UX for browsing visual content.",
       tags: ["JavaScript", "HTML5", "CSS3", "Responsive Design"],
-      image: "frames.jpg",
+      image: "/independent-project/frames.jpg",
       github: "https://github.com/washu-cse2004-fl2025-1/image-gallery-liviakaufman",
       live: "https://washu-cse2004-fl2025-1.github.io/image-gallery-liviakaufman/",
       category: "web"
@@ -60,7 +60,7 @@ function App() {
       title: "Cosmos Exploration Branding",
       description: "A complete visual identity system featuring custom logo design, a space-themed color palette, and responsive iconography.",
       tags: ["Branding", "UI/UX Design", "Iconography", "Style Guide"],
-      image: "/cosmos-logo.png",
+      image: "/independent-project/cosmos-logo.png",
       designLink: ["/cosmos-logo.png", "/cosmos-logo2.png"],
       category: "design"
     },
@@ -78,7 +78,7 @@ function App() {
       title: "ML Tennis Winner Prediction",
       description: "Research project utilizing Logistic Regression, Random Forest, and Keras Deep Learning to predict Grand Slam outcomes with 98.3% surface accuracy and 74.6% winner accuracy.",
       tags: ["Machine Learning", "Python", "Keras", "Data Analysis"],
-      image: "tennis.jpg", // High-quality Tennis/Data image
+      image: "/independent-project/tennis.jpg",
       github: "https://github.com/liviakaufman/tennis-ml-prediction", 
       category: "data"
     },
@@ -87,7 +87,7 @@ function App() {
       title: "Enhanced Predictive Modeling & Stratification",
       description: "A high-performance ensemble model featuring 3-tier risk stratification and demographic subgroup analysis. Achieved significant F1 score improvements using Bootstrap validation and custom feature engineering.",
       tags: ["Predictive Analytics", "Ensemble Methods", "Bootstrap CI", "Python"],
-      image: "modeling.jpg", // Recommended: Screenshot of your 'Sepsis Rate by Risk Tier' or 'Feature Importance' chart
+      image: "/independent-project/modeling.jpg", // Recommended: Screenshot of your 'Sepsis Rate by Risk Tier' or 'Feature Importance' chart
       github: "https://github.com/liviakaufman/predictive-risk-modeling",
       category: "data"
     },
@@ -96,7 +96,7 @@ function App() {
       title: "Interactive Web Calculator",
       description: "A clean, responsive calculator built with vanilla JavaScript and CSS. Features a modern UI and handles complex arithmetic operations with precise state management.",
       tags: ["JavaScript", "HTML5", "CSS3", "Logic"],
-      image: "calc.jpg", // Use a screenshot of your calculator UI
+      image: "/independent-project/calc.jpg", // Use a screenshot of your calculator UI
       github: "https://github.com/liviakaufman/calculator",
       category: "web"
     },
